@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Media.BLL.Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoFixture.AutoEF" Version="0.5.1" />
+      <PackageReference Include="FluentAssertions" Version="5.10.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-preview.2.20159.4" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.0-preview-20200318-01" />
+      <PackageReference Include="Moq" Version="4.13.1" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+      <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RatingList.BLL\RatingList.BLL.csproj" />
+      <ProjectReference Include="..\RatingList.DataAccess\RatingList.DataAccess.csproj" />
+      <ProjectReference Include="..\RatingList.Domain\RatingList.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
